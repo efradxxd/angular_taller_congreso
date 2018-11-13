@@ -1,3 +1,13 @@
-<p>
-  ngswitch works!
-</p>
+<div [ngSwitch]="diasSemana">
+    <p class = "item" *ngSwitchCase="'lunes'">Tomar caf'e y trabajar</p>
+    <p class = "item" *ngSwitchCase="'martes'">No casarme y evitar barcos</p>
+    <p class = "item" *ngSwitchCase="'miercoles'">Sobrevivir al dia m'as largo de la semana</p>
+    <p class = "item" *ngSwitchCase="'jueves'">Hacer simulacro de viernes</p>
+    <p class = "item" *ngSwitchCase="'viernes'">Actualizar redes sociales</p>
+    <br>
+    <br>
+    <p *ngSwitchDefault>Elije un dia de la semana para conocer tu destino</p>
+    <p></p>
+  </div>
+  <br>
+  <input type="text" [(ngModel)]="diasSemana" />

@@ -1,3 +1,23 @@
-<p>
-  ngelse works!
-</p>
+<h1>COMPONENTE ELSE</h1>
+<div class="contenedor">
+    <div *ngIf="v_componente == true ; else otroTexto">
+      <h1> Texto si se cumple la condicion</h1>
+      <p>
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+         Ut enim ad minim veniam"
+      </p>
+    </div>
+</div>
+<div class="contenedor">
+  <ng-template #otroTexto >
+    <h1>Texto si no se cumple la condicion </h1>
+    <p>
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        Ut enim ad minim veniam"  
+    </p>
+    </ng-template>
+</div>
+<button (click)="v_componente = !v_componente">cambiar valor</button>
+<p> v_componente: {{v_componente}}</p>

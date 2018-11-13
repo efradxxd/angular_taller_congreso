@@ -9,9 +9,11 @@ import { Routes, RouterModule } from '@angular/router';
 import { appRoutes } from './app.routing';
 import { NgelseComponent } from './ngelse/ngelse.component';
 import { NgswitchComponent } from './ngswitch/ngswitch.component';
-import { NgmodelComponent } from './ngmodel/ngmodel.component';
 import { NgstyleComponent } from './ngstyle/ngstyle.component';
 import { NgclassComponent } from './ngclass/ngclass.component';
+// Usado en dirictiva ngmodel
+import { FormsModule } from '@angular/forms';
+import { ColorComponent } from './color/color.component';
 
 
 
@@ -23,14 +25,15 @@ import { NgclassComponent } from './ngclass/ngclass.component';
     NgforComponent,
     NgelseComponent,
     NgswitchComponent,
-    NgmodelComponent,
     NgstyleComponent,
-    NgclassComponent
+    NgclassComponent,
+    ColorComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     HttpModule,
+    FormsModule,
     RouterModule.forRoot(appRoutes)
   ],
   providers: [],

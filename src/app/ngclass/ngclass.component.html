@@ -1,3 +1,6 @@
-<p>
-  ngclass works!
-</p>
+<h1>componente</h1>
+<h1> Estilos</h1>
+<!--si la varibale color se encuentra definada utilize su valor y si no le asigana el color peru-->
+<div class="cuadrado" [ngStyle]="{'background': color ? color:'peru'}"> </div>
+
+<button (click)="color = 'red'" [ngClass]="{'activo': color=='red'}">rojo</button>

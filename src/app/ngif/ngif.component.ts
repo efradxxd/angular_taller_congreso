@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NgifComponent implements OnInit {
 
-  valor: Boolean = false;
+  v_componente: Boolean = false;
   constructor() { }
 
   ngOnInit() {

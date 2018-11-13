@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./ngelse.component.css']
 })
 export class NgelseComponent implements OnInit {
-
+  v_componente: Boolean = false;
   constructor() { }
 
   ngOnInit() {
