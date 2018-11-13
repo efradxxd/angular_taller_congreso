@@ -1,0 +1,60 @@
+.wrapper{
+	margin-top: 50px;
+}
+
+h1{
+    text-align: center;
+    font: 19px Verdana;
+    color: #6e6e6e;
+}
+
+header{
+	width: 100%;
+	height: 50px;
+	background:#fff;
+	position: fixed;
+	z-index: 100;
+	box-shadow:1px 1px 5px #000; 
+	-webkit-box-shadow:1px 1px 5px #000;
+	-moz-box-shadow:1px 1px 5px #000;
+	-o-box-shadow:1px 1px 5px #000;   
+}
+
+#menu ul a{
+	text-decoration: none;
+	color: #6e6e6e;
+	font: 16px Verdana;
+	padding: 10px;
+	/*background: red;*/
+	/*QUE SE VEA SHIDO CUANDO PASA EL EL MOUSE*/
+	transition: background .6s, color .6s;
+	-webkit-transition: background .6s, color .6s;
+	-moz-transition: background .6s, color .6s;
+	-o-transition: background .6s, color .6s;
+}
+#menu ul{
+    text-align: center;
+}
+#menu ul a:hover{
+	background:#6e6e6e;
+	color: #f2f2f2;
+}
+#menu div{
+	height: 50px;
+	display: none;
+	z-index: 1;
+}
+
+#contenedor{
+	width: 1024px;
+    height: 1024px;
+	border-radius: 15px;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto; 
+	background-color: #fff;
+	box-shadow:1px 1px 5px 1px #000; 
+	-webkit-box-shadow:1px 1px 5px 1px #000;
+	-moz-box-shadow:1px 1px 5px 1px #000;
+	-o-box-shadow:1px 1px 5px 1px #000;
+}
